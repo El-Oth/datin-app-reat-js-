@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* {
+  font-family: "Readex Pro", sans-serif;
+}
+h2 {
+  font-style: italic;
+}
+.primary-button {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  background: linear-gradient(45deg, #e26d5a, #df3b57);
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+}
+.primary-button:hover {
+  background: linear-gradient(260deg, #e26d5a, #df3b57);
+}
+.secondary-button {
+  color: #6b705c;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: solid 2px #343a40;
+  margin: 6px;
+}
+.secondary-button:hover {
+  color: #343a40;
+  border: solid 2px #000814;
+}
+.primary-title {
+  font-size: 90px;
+  color: white;
+}
+
+/*--- nav styling -----*/
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 6%;
+  align-items: center;
+}
+nav .logo-container {
+  width: 170px;
+  margin: 15px;
+}
+nav .logo-container .logo {
+  width: 100%;
+}
+nav .nav-button {
+  color: #df3b57;
+  background-color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+}
+nav .nav-button:disabled {
+  background-color: #ffe8d6;
+  color: #df3b57;
+}
+/*--- home styling -----*/
+
+.overlay {
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  background: url("img/07eef8b101ca939c978a599f508aa955.webp"),
+    linear-gradient(to bottom, #6b705c, #ffe8d6);
+}
+.home {
+  margin-top: 30vh;
+}
+/*--- auth modal styling -----*/
+
+.auth-modal {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+.auth-modal .close-icon {
+  float: right;
+}
+.auth-modal form {
+  display: flex;
+  flex-direction: column;
+}
+.auth-modal input[type="password"],
+.auth-modal input[type="email"] {
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+}
+/*--- boarding styling -----*/
+
+.onBoarding form {
+  display: flex;
+  justify-content: center;
+}
+.onBoarding form section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 35%;
+  text-align: start;
+}
+.onBoarding form input {
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: solid 2px #6b705c;
+  border-radius: 10px;
+}
+.onBoarding form input::-webkit-outer-spin-button,
+.onBoarding form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.onBoarding form label {
+  margin: 10px 0;
+}
+.onBoarding form .multiple-input {
+  display: flex;
+  flex-direction: row;
+}
+.onBoarding form .multiple-input input {
+  margin-right: 10px;
+}
+.onBoarding form .multiple-input label {
+  padding: 10px;
+  border: solid 2px rgb(144, 144, 144);
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
+.onBoarding form input[type="radio"] {
+  display: none;
+}
+.onBoarding form input[type="number"] {
+  width: 10%;
+}
+.onBoarding form input[type="radio"]:checked + label {
+  border: solid 2px #f28482;
+  ackground-color: #fff0f3;
+}
+.onBoarding form input[type="submit"]:hover {
+  background-color: #fff0f3;
+  border: #f28482;
+}
+.onBoarding form input[type="submit"]:active {
+  background-color: #ff8fa3;
+  border: #fff0f3;
+}
